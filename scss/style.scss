@@ -1,0 +1,139 @@
+$hue01: 180;
+$hue02: 35;
+
+body {
+  background-color: hsl($hue01, 10%, 55%);
+  background-image: url("../img/bg/bgstripesthingrey2.svg"), linear-gradient(to right, hsl($hue01, 10%, 35%), hsl($hue01, 10%, 45%));
+  background-attachment: fixed;
+  padding: 0px;
+}
+
+a:link    {	color: hsl($hue02, 80%, 55%);
+  			    text-decoration: none;}
+
+a:visited {	color: hsl($hue02, 80%, 55%);
+  			    text-decoration: none;}
+
+h1, h2, h3, h4, h5 {
+  font-family: sans-serif;
+  color: hsl($hue01, 10%, 30%);
+  text-align: center;
+  margin: 0px;
+}
+
+h2 {
+  font-size: 2.2em;
+}
+
+p {
+  font-family: sans-serif;
+  color: hsl($hue01, 10%, 30%);
+  margin: 30px 100px;
+}
+
+.allbox {
+  background-color: white;
+  width: 880px;
+  border-style: solid;
+  border-width: 15px;
+  border-color: white;
+  padding: 0px;
+  margin: 8px auto;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0px 1px 5px hsla($hue01, 10%, 0%, .3);
+}
+
+.titlebox {
+  background-color: hsl($hue01, 10%, 30%);
+}
+
+.titlebox img {
+    display: block;
+    padding: 30px 0px;
+    margin: auto;
+    width: 60%;
+}
+
+.contentbox {
+  background-color: hsl($hue01, 10%, 93%);
+  margin: 15px 0px;
+  padding: 30px 15px;
+  box-shadow: 1px 4px 5px hsla($hue01, 10%, 30%, .3);
+  border: 4px hsl(215, 10%, 92%) solid;
+}
+
+.flexparent {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px 0px;
+}
+
+.item {
+  background-color: white;
+  padding: 10px;
+  flex-grow: 1;
+  width: 29%;
+  margin: 5px;
+}
+
+.item p {
+  margin: 10px;
+}
+
+.img-one {
+  border-color: white;
+  border: 10px solid white;
+  width: 80%;
+  display: block;
+  margin: auto;
+  margin-top: 25px;
+}
+
+.btn-link {
+  background-color: white;
+  color: hsl($hue01, 10%, 30%);
+  font-family: sans-serif;
+  font-size: 1.8em;
+  display: block;
+  border: 1px dashed hsl($hue01, 10%, 30%);
+  padding: 15px;
+  margin: 15px 100px auto; /**/
+  margin-top: 40px;
+  text-align: center;
+}
+
+a.btn-link:link {
+  color: hsl($hue02, 80%, 50%);
+}
+
+a.btn-link:visited {
+  color: hsl($hue02, 80%, 50%);
+}
+
+.btn-link:hover {
+  box-shadow: 0px 6px 12px hsla($hue01, 10%, 30%, .3);
+  background-color: hsl($hue02, 100%, 85%);
+}
+
+@media only screen and (max-width: 940px) {
+p {             margin: 30px 50px; }
+.allbox {       width: 96%; }
+.btn-link {     margin: 15px 50px auto;
+                font-size: 1.4em;}
+.titlebox img { padding: 20px 0px;
+                width: 70%; } }
+
+@media only screen and (max-width: 500px) {
+h2 {            font-size: 1.4em; }
+p {             margin: 30px 0px; }
+.allbox {       width: 96%;
+                border-width: 5px; }
+.flexparent {   flex-direction: column;
+                flex-wrap: nowrap; }
+.item {         width: 95%; }
+.btn-link {     margin: 15px 0px auto; }
+.titlebox img { padding: 10px 0px;
+                width: 90%; }
+.btn-link {     font-size: 1em; }
+.img-one {      width: 90%; } }
